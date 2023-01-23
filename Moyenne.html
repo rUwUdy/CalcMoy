@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowFuckedAreYou</title>
+</head>
+<body>
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+        .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
+          font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
+          font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+        </style>
+        <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0lax">Matiere</th>
+            <th class="tg-0lax">Note Ds</th>
+            <th class="tg-0lax">Note Examen</th>
+            <th class="tg-0lax">Note Tp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0lax">Electromagnetisme</td>
+            <td class="tg-0lax"><input type="number" id="elecDs"></td>
+            <td class="tg-0lax"><input type="number" id="elecEx"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Signal</td>
+            <td class="tg-0lax"><input type="number" id="sigDS"></td>
+            <td class="tg-0lax"><input type="number" id="sigEx"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Math</td>
+            <td class="tg-0lax"><input type="number" id="mathDs"></td>
+            <td class="tg-0lax"><input type="number" id="mathEx"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">proba</td>
+            <td class="tg-0lax"><input type="number" id="probaDs"></td>
+            <td class="tg-0lax"><input type="number" id="probaEx"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">sys logiques</td>
+            <td class="tg-0lax"><input type="number" id="SysDS"></td>
+            <td class="tg-0lax"><input type="number" id="SysEx"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">circuit elec</td>
+            <td class="tg-0lax"><input type="number" id="circDs"></td>
+            <td class="tg-0lax"><input type="number" id="circEx"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Electroniguqe(TP)</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax"><input type="number" id="TPelect"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">TP telecom( Gnanna)</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax"><input type="number" id="TPtlcm"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">TP telecom (ABOIN)</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax"><input type="number" id="TpAboin"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Telecom</td>
+            <td class="tg-0lax"><input type="number" id="DsTlcm"></td>
+            <td class="tg-0lax"><input type="number" id="ExTlcm"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Programmation theorique</td>
+            <td class="tg-0lax"><input type="number" id="DsProg"></td>
+            <td class="tg-0lax"><input type="number" id="ExProg"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Tp Programmation</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax">N/A</td>
+            <td class="tg-0lax"><input type="number" id="TpProg"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">ALGO</td>
+            <td class="tg-0lax"><input type="number" id="DsAlgo"></td>
+            <td class="tg-0lax"><input type="number" id="ExAlgo"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">ENG</td>
+            <td class="tg-0lax"><input type="number" id="DsEng"></td>
+            <td class="tg-0lax"><input type="number" id="ExEng"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Fr</td>
+            <td class="tg-0lax"><input type="number" id="Dsfr"></td>
+            <td class="tg-0lax"><input type="number" id="Exfr"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">droits</td>
+            <td class="tg-0lax"><input type="number" id="DsDroits"></td>
+            <td class="tg-0lax"><input type="number" id="ExDroits"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">C2I</td>
+            <td class="tg-0lax"><input type="number" id="Dsc2i"></td>
+            <td class="tg-0lax"><input type="number" id="ExC2i"></td>
+            <td class="tg-0lax">N/A</td>
+          </tr>
+        </tbody>
+        </table>
+        <button onclick="calculate()">calculate</button>
+</body>
+<script>
+    function calculate(){
+        var elecDs = document.getElementById('elecDs').value;
+        var elecEx = document.getElementById('elecEx').value;
+        var sigDs = document.getElementById('sigDS').value;
+        var sigEx = document.getElementById('sigEx').value;
+        var mathDs = document.getElementById('mathDs').value;
+        var mathEx = document.getElementById('mathEx').value;
+        var probaDs = document.getElementById('probaDs').value;
+        var probaEx = document.getElementById('probaEx').value;
+        var sysDs = document.getElementById('SysDS').value;
+        var sysEx = document.getElementById('SysEx').value;
+        var circDs = document.getElementById('circDs').value;
+        var  circEx = document.getElementById('circEx').value;
+        var DsTlcm = document.getElementById('DsTlcm').value;
+        var ExTlcm = document.getElementById('ExTlcm').value;
+        var DsProg = document.getElementById('DsProg').value;
+        var ExProg = document.getElementById('ExProg').value;
+        var DsAlgo = document.getElementById('DsAlgo').value;
+        var ExAlgo = document.getElementById('ExAlgo').value;
+        var DsEng = document.getElementById('DsEng').value;
+        var ExEng = document.getElementById('ExEng').value;
+        var Dsfr = document.getElementById('Dsfr').value;
+        var Exfr = document.getElementById('Exfr').value;
+        var DsDroits = document.getElementById('DsDroits').value;
+        var ExDroits = document.getElementById('ExDroits').value;
+        var Dsc2i = document.getElementById('Dsc2i').value;
+        var ExC2i = document.getElementById('ExC2i').value;
+        var TPelect = document.getElementById('TPelect').value;
+        var TpAboin = document.getElementById('TpAboin').value;
+        var TPtlcm = document.getElementById('TPtlcm').value;
+        var TpProg = document.getElementById('TpProg').value;
+
+
+        var Ds=((Number(elecDs)*1.5)+Number(sigDs)+(Number(mathDs)*1.5)+Number(probaDs)+Number(sysDs)+Number(circDs)+Number(DsTlcm)+Number(DsProg)+Number(DsAlgo)+Number(DsEng)+Number(Dsfr)+(Number(DsDroits)*0.5)+Number(Dsc2i*0.5))/13;
+        var Ex=((Number(elecEx)*1.5)+Number(sigEx)+(Number(mathEx)*1.5)+Number(probaEx)+Number(sysEx)+Number(circEx)+Number(ExTlcm)+Number(ExProg)+Number(ExAlgo)+Number(ExEng)+Number(Exfr)+(Number(ExDroits)*0.5)+Number(ExC2i*0.5))/13;
+        var Tp=((Number(TPelect)*0.5)+(((Number(TpAboin)+Number(TPtlcm))/2)*0.5)+(Number(TpProg)*0.5))/1.5;
+        var moy =(Tp*0.1)+(Ds*0.3)+(Ex*0.6);
+        alert("moy gen: "+moy);
+    }
+
+
+</script>
+</html>
